@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocinando en CaC</title>
+    <!--Iconos Pie de Pagina -->
+    <script src="https://kit.fontawesome.com/e9aa5b2bf5.js" crossorigin="anonymous"></script>
+    <!--Iconos Contactos -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <img class="logo" src="./assets/img/cocinando.png" alt="logo" />
+      <h1>Cocinando en CaC</h1>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recetas">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galeria de Fotos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+<!--::::::::::::::::::::::::::::::::::::::-->
+<!--:::::  Seccion Quienes Somos    ::::::-->
+<!--::::::::::::::::::::::::::::::::::::::-->        
+      <section id="quienes-somos" class="section">
+        <div class="container">
+          <div class="quienes-somos-inner">
+            <div class="quienes-somos-foto">
+              <img src="./assets/img/somos-nosotros.png" alt="Foto quienes somos">
+            </div>
+            <h1 class="quienes-somos-title">Somos «Cocinando en CaC»</h1>
+            <p class="quienes-somos-text">
+              Un equipos de profesionales de la cocina, chefs de famosos
+              restaurantes de Argentina y de Latinoamérica.<br>Les iremos dando
+              nuestras mejores recetas para toda ocasión: entradas, platos
+              principales, desayunos, meriendas, postres, comidas regionales y
+              sabores del mundo entero</p>
+          </div>
+        </div>
+      </section>
+<!--::::::::::::::::::::::::::::::::::::::-->
+<!--:::::    Seccion Recetas        ::::::-->
+<!--::::::::::::::::::::::::::::::::::::::-->
+	<!--   Tarjetas-->
+      <section id="recetas">
+        <div class="title-cards">
+		    <h1>Recetas</h1>
+	    </div>
+        <div class="container-card">
+            <div class="card">
+	            <figure>
+		            <img src="./assets/img/milanesa.png"">
+	            </figure>
+	            <div class="contenido-card">
+		            <h3>Receta No.1</h3>
+		            <p>¿Quien se resiste a una milanesa con fritas?</p>
+                    <a href="#">Leer Más</a>
+	            </div>
+            </div>
+            <div class="card">
+	            <figure>
+		            <img src="./assets/img/locro.png">
+	            </figure>
+	            <div class="contenido-card">
+		            <h3>Receta No.2</h3>
+		            <p>El plato con mas tradicion en la Argentina</p>  
+                    <a href="#">Leer Más</a>
+	            </div>
+            </div>
+            <div class="card">
+	            <figure>
+		            <img src="./assets/img/empanadas.png">
+	            </figure>
+	        <div class="contenido-card">
+		        <h3>Receta No.3</h3>
+		        <p>Empanadas salteñas las mas ricas</p>   
+              
+		        <a href="#">Leer Más</a>
+	        </div>
+        </div>
+        </div>
+      </section>
+<!--Fin   Tarjetas-->
+
+<!--::::::::::::::::::::::::::::::::::::::-->
+<!--:::::     Seccion Contactos     ::::::-->
+<!--::::::::::::::::::::::::::::::::::::::-->  
+<section id="contacto">
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Contacto</h2>
+            <p>Esperamos tu mensaje para enviarte las mejores recetas.</p>
+            <a href="#"><i class="fa fa-phone"></i> (+54 11) 4816-1414</a>
+            <a href="#"><i class="fa fa-envelope"></i> contacto@cocinandoencac.com.ar</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Montevideo 968, CABA - Argentina</a>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.25937547372!2d-58.3924124246314!3d-34.59760217295644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabf23e2f86d%3A0x4df9c3871c6d8b07!2sMontevideo%20968%2C%20C1019%20CABA!5e0!3m2!1ses-419!2sar!4v1683253979482!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:2px solid rgb(255, 123, 0);" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form id="formulario" action="" method="">
+            <div class="form-control">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre" class="campo">
+                <p></p>
+            </div>   
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Tu email" class="campo">
+                <p></p>                
+            </div>
+            <div class="form-control">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu Mensaje..."></textarea>
+            </div>   
+            
+            <button type="submit" class="btn-enviar">Enviar</button>
+         
+        </form>
+    </div>
+</section>
+
+<!--:::::::::::::::::::::::::::::::::::::-->
+<!--::::::::  Sección Galeria   :::::::::-->
+<!--:::::::::::::::::::::::::::::::::::::-->
+
+    <section id="galeria">
+        <div class="container-galeria">
+          <h2>Galeria de imagenes</h2>
+            <form id="form-galeria" action="" method="">
+ 
+                <div class="form-control-galeria">
+                    <label for="cocina">Cocinas del Mundo</label>
+                    <select id="cocina"> </select><br><br>
+                </div>
+                <div class="form-control-galeria">
+                    <label for="tipo">Tipos de comidas</label>
+                    <select id="tipo"> </select>
+                </div> 
+                <div class="form-control-galeria">
+                  <input type="button" name="boton" id="boton" class="boton" value="Buscar" onclick="recuperarFoto()"/>
+                </div>   
+            </form>
+
+            <div class="container-imagenes">   
+              <h3>La foto de la receta buscada es:</h3><br>
+              <img id="foto" alt=""> 
+            </div>
+        </div>
+    </section>
+    </main>
+<!--::::::::::::::::::::::::::::::::::::::-->
+<!--:::::     Seccion Footer        ::::::-->
+<!--::::::::::::::::::::::::::::::::::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="assets\img\cocinando.png" alt="Logo">
+                    </a>
+                </figure>
+                </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Belén Saravia - belensaravia09@gmail.com</p>
+                <p>Alejandro Di Masi - alejanddodimasi@gmail.com</p>
+                <p>Marcelo Berdaguer - mberdaguer@gmail.com</p>
+            </div>
+            <div class="box">
+                    <h2>PARA SEGUIRNOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Cocinando en CaC - EQUIPO W</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="./assets/js/valida.js"></script>
+    <script src="./assets/js/main.js "></script>
+</body>
+</html>
