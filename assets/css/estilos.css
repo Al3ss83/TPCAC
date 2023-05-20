@@ -1,0 +1,454 @@
+/* ************************************************* */
+/*      HOJA DE ESTILOS - CSS - EQUIPO W             */         
+/*      TRABAJO PRACTICO OBLIGATORIO - 1º cuat 2023  */         
+/* ************************************************* */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-title: 'Roboto', sans-serif;
+    --ff-text: 'Rubik', sans-serif;
+    --clr-black: #1c1c1c;
+    --clr-white: #ececec;
+    --clr-orange: #ff9900;
+    --clr-orange-red: #ff3300;
+    --clr-orange-1: #E0773B;
+    --clr-orange-dark: #F5550C;
+    --clr-red: #ff0000;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--ff-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: var(--clr-orange-red);
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-title);
+} 
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgba(0,0,0,0.3);
+    box-shadow: 0.2rem 0.2rem 0.7rem rgba(0,0,0,0.5);
+    color: white;
+    background-color: var(--clr-orange-1);
+}
+
+button:hover{
+    background-color: var(--clr-orange-dark);
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 0 1rem;   /* Agregado */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    max-width: 5rem;
+    margin: 0; 
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    font-size: large;
+    font-weight: bold;
+    color: var(clr-black);
+}
+
+/* Quienes somos */ 
+.quienes-somos-inner{
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    grid-template-areas: 
+        "foto titulo"
+        "foto texto";
+    padding-block: 3rem;
+    column-gap: 2rem;
+    row-gap: 1rem; 
+}
+.quienes-somos-foto{
+    grid-area: foto;
+    background-image: var(--clr-black);
+    border-radius: 1rem;
+    transform: scale(.9);
+}
+
+.quienes-somos-foto img{
+    max-width: 100%;
+    transform: scale(1.2);
+    border-radius: 1rem;
+}
+.quienes-somos-title{
+  grid-area: titulo;
+  font-size: 2rem;
+  line-height: 1.1;  
+}
+
+.quienes-somos-text{
+    grid-area: texto;
+    font-size: 1.2rem;
+    line-height: 1.3
+}
+
+.section{
+    padding-block: 4rem;
+}
+
+.section-dark{
+    background-image: var(--clr-orange-dark);
+    color: var(--clr-white);
+}
+
+.section-contactos{
+    background-image: var(--clr-white);
+}
+/* Recetas - Tarjetas (Cards) */
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+   	margin-top: 20px;
+   	text-align: center;
+    font-size: large;
+    font-weight: bold; 
+	color: var(--clr-black);
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: var(--clr-white);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+
+.card .contenido-card{
+	padding: 15px;
+    text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+    font-weight: bold;
+	color: var(--clr-black);
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: var(--clr-black);
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: var(--clr-orange-1);
+	border: 1px solid var(--clr-orange-dark);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: var(--clr-orange-dark);
+	color: var(--clr-white);
+}    
+
+/* ******************************** */ 
+/*      Formulario CONTACTO         */ 
+/* ******************************** */ 
+.container-form{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: var(--clr-orange-dark);
+}
+.container-form p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: var(--clr-black);
+    font-weight: 700;
+}
+.container-form a i{
+    color: var(--clr-orange-1);
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid var(--clr-orange-1);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form iframe{
+    border: 2px solid var(--clr-orange-dark)
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: var(--clr-orange);
+    color: var(--clr-white);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: var(--clr-orange-red);
+}
+.form-control {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-control input {
+    border: none;
+    background-color: var(--clr-white);
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;    
+}
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: var(--clr-red);
+}
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: medium;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color: var(--clr-red);
+}
+
+/* ******************************** */ 
+/*      Formulario GALERIA         */ 
+/* ******************************** */ 
+.container-galeria{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;   
+    background: var(--clr-white);
+    } 
+
+.container-galeria h2{
+        margin-bottom: 15px;
+        font-size: 35px;
+        color: var(--clr-orange-dark);
+}
+
+.container-imagenes h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: var(--clr-orange-dark);
+}
+
+.form-control-galeria {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control-galeria label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.container-imagenes img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    padding: 6px;
+}
+
+.container-imagenes img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05); 
+    transform: rotate(-1.2deg) scale(1.05);
+    transition: 0.6s ease-out;
+    filter: grayscale(0.9);
+}
+.form-control-galeria .boton{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgba(0,0,0,0.3);
+    box-shadow: 0.2rem 0.2rem 0.7rem rgba(0,0,0,0.5);
+    color: white;
+    background-color: orange;
+}
+
+.form-control-galeria .boton:hover{
+    background-color: orangered;
+}
+
+/* ******************************** */ 
+/*      Pie de Pagina  - FOOTER     */ 
+/* ******************************** */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.pie-pagina{
+    width: 100%;
+    background-color: var(--clr-orange-1);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+  /*  height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 8rem; 
+   
+}
+.pie-pagina .grupo-1 .box h2{
+    color: var(--clr-white);
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+.pie-pagina .grupo-1 .box p{
+    color: var(--clr-white);
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+  /*  height: 45px; */
+    line-height: 45px;
+    color: var(--clr-white);
+    margin-right: 10px;
+    background-color: var(--clr-black);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: var(--clr-orange-red);
+}
+.pie-pagina .grupo-2{
+    background-color: var(--clr-orange-dark);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--clr-white);
+}
+.pie-pagina .grupo-2 small{
+    font-size: 1rem;
+}
+/* ************ FIN DEL FOOTER ************ */
