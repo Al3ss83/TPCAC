@@ -4,8 +4,8 @@ window.addEventListener('load', ()=> {
     const email = document.getElementById('email')
    
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
         validaCampos();
+        e.preventDefault();
     })
 
 
