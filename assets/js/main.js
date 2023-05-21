@@ -1,3 +1,73 @@
+//Armo clases para hedder y footer
+class MyHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<header class="main-header">
+        <a href="index.html">
+        <img class="logo" src="./assets/img/cocinando.png" alt="logo" />
+        </a>
+        <h1>Cocinando en CaC</h1>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recetas">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galeria de Fotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+  
+       
+      </header>`;
+      }
+    }
+
+customElements.define ('my-header', MyHeader);
+
+class MyFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = ` <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="./assets/img/cocinando.png" alt="logo"/>
+                    </a>
+                </figure>
+                </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Belén Saravia - belensaravia09@gmail.com</p>
+                <p>Alejandro Di Masi - alejanddodimasi@gmail.com</p>
+                <p>Marcelo Berdaguer - mberdaguer@gmail.com</p>
+            </div>
+            <div class="box">
+                    <h2>PARA SEGUIRNOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Cocinando en CaC - EQUIPO W</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>`;
+      }
+    }
+
+customElements.define ('my-footer', MyFooter)
+//FIN HEADER Y FOOTER
+
+
 // Llenar los arreglos con datos para seleccionar las fotos
 //Cocinas del mundo (Cuisines)   
 const cocEsp = ["Africana", "Americana", "Britanica", "Cajun", "Caribeña", "China", "Europa del Este", 
@@ -69,3 +139,5 @@ fetch(URL)
 });
 }
 llenarCampos();
+
+

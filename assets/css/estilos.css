@@ -13,7 +13,7 @@
     --ff-title: 'Roboto', sans-serif;
     --ff-text: 'Rubik', sans-serif;
     --clr-black: #1c1c1c;
-    --clr-white: #ececec;
+    --clr-white: #ececec; 
     --clr-orange: #ff9900;
     --clr-orange-red: #ff3300;
     --clr-orange-1: #E0773B;
@@ -452,3 +452,136 @@ button:hover{
     font-size: 1rem;
 }
 /* ************ FIN DEL FOOTER ************ */
+
+/*secciones*/
+/*SECCION 1*/
+
+figure {
+    display: flex;
+    align-items: center;
+    
+}
+  
+figcaption {
+    margin-left: 10px;
+    font-size: 16px;
+    font-family:'Lucida Sans Unicode';;
+}
+
+#milanesa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://i.pinimg.com/originals/8d/39/d2/8d39d25fa357ba5e799ee8339410aaa9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    color: white;
+}
+
+.ingredientes .img-ingredientes{
+    float: left;
+    border: solid darkorange;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    background-image: url("https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2017/03/milanesa-napolitana.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px; 
+   
+}
+
+#receta img{
+    border: solid darkorange;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 495px;
+    height: 456px;
+}
+
+#milanesa #empanada #pollo{
+    font-size: 5em;
+    font-family:'Lucida Sans';
+}
+/*seccion 2*/
+#empanadas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://tusradios.com.ar/uploads/noticias/5/2022/04/67899e2da41b6587c4962095f22e97e03eac6616.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    color: white;
+}
+
+
+.ingredientes2 .img-ingredientes2{
+    float:left;
+    border: solid darkorange;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-image: url("https://cdn0.recetasgratis.net/es/posts/3/5/6/empanadas_saltenas_20653_paso_7_600.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px; 
+    text-align: left;
+}
+
+#preparacion #img-preparacion {
+    border: solid darkorange;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+
+/*seccion 3*/
+
+#pollo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://www.deliciosi.com/images/1400/1453/pollo-al-horno-a-la-mostaza-665.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    color: white;
+}
+
+
+
+.ingredientes3 .img-ingredientes3{
+    float:left;
+    border: solid darkorange;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-image: url("https://www.lamansiondelasideas.com/wp-content/uploads/2018/06/INGREDIENTES.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px; 
+    text-align: left;
+}
+
