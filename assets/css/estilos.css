@@ -607,14 +607,13 @@ figcaption {
         font-size: 10px;
         margin-bottom: 5px;
         margin-top: 2px; 
-
        
     }  
     .container-form form textarea{
         max-width: 530px;
         min-width: 460px;
-        min-height:100px;
-        max-height:100px;   
+      /*  min-height:100px;
+        max-height:100px;  */ 
     } 
     .form-control label {
         display: inline-block;
@@ -654,6 +653,49 @@ figcaption {
     }       
     .pie-pagina .grupo-1{
         width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .pie-pagina .grupo-1 .box{
+        flex-direction: column;
+    } 
+    .pie-pagina .grupo-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        text-align: center;
+        color: var(--clr-white);   
+    }
+}
+@media screen and (max-width: 540px) {
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        float: none;
+        width: 40%
+      /*  width: 60%; */
+        font-size: small;
+    }
+    .container-form{
+        width: 40%;        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 5px;
+    }
+    .container-form form textarea{
+        max-width: 250px;
+        min-width: 250px;
+      /*  min-height: 80px;
+        max-height: 80px;    */
+    } 
+    .container-imagenes img {
+        width: 250px;
+        height: 100px;
+    }       
+    .pie-pagina .grupo-1{
+        width: 40%;
         display: flex;
         flex-direction: column;
     }

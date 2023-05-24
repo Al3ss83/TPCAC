@@ -94,23 +94,24 @@
                 width="400" height="300" style="border:2px solid rgb(255, 123, 0);" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <form id="formulario" action="" method="">
+        <form id="formulario" action="https://formspree.io/f/mnqyrogg" method="POST">
             <div class="form-control">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Tu Nombre" class="campo">
+                <input type="text" id="nombre" placeholder="Tu Nombre" class="campo" name="Nombre" required>
                 <p></p>
             </div>   
             <div class="form-control">
                 <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="Tu email" class="campo">
+                <input id="email" type="email" placeholder="Tu email" class="campo" name="Email" required>
                 <p></p>                
             </div>
             <div class="form-control">
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu Mensaje..."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu Mensaje..." required></textarea>
             </div>   
             
             <button type="submit" class="btn-enviar">Enviar</button>
+            <p id="my-form-status"></p>
          
         </form>
     </div>
@@ -150,7 +151,7 @@
 <!--::::::::::::::::::::::::::::::::::::::-->
 <my-footer> </my-footer>
     <!-- SCRIPTS -->
-    <script src="./assets/js/valida.js"></script>
+    <script src="./assets/js/sendMail.js"></script>
     <script src="./assets/js/main.js "></script>
 </body>
 </html>
